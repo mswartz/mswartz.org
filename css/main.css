@@ -108,4 +108,27 @@ button { width: auto; overflow: visible; }
 
 .ui-block:last-child, .ui-block.last { margin-right: 0; }
 
-body { background-color: #000; }
+body { background-color: #EFEFEF; }
+
+.header { padding: 20px; background-color: rgba(255, 255, 255, 0.9); position: fixed; }
+
+.short-header { width: 50px; height: 50px; position: fixed; background-color: rgba(0, 0, 0, 0.2); }
+
+@media (min-width: 500px) { .nav-links { float: right; } }
+.nav-links li { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; }
+
+/* Index page */
+.post-tease { padding: 10px; background-color: #FFF; margin-bottom: 20px; }
+
+.resp-img { width: 100%; height: auto; }
+
+/* Portfolio */
+.portfolio-cover { z-index: -1000; position: absolute; width: 100%; height: 100%; background-attachment: fixed; background-repeat: no-repeat; background-size: 100%; *zoom: 1; }
+.portfolio-cover:after { content: ""; display: table; clear: both; }
+
+.portfolio-title { background-color: rgba(255, 255, 255, 0.25); width: 700px; position: absolute; top: 50%; }
+.portfolio-title h1 { font-size: 42px; }
+
+.portfolio-content { max-width: 700px; margin: 0 auto; }
+.portfolio-content img { width: 120%; margin: 0 -10% 0 -10%; }
+.portfolio-content p { font-size: 18px; margin-bottom: 30px; }

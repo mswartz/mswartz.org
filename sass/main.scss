@@ -1,2 +1,89 @@
 @import "base";
 
+$medium: 500px;
+$large: 700px;
+
+body {
+	background-color: #EFEFEF;
+}
+
+.header {
+	padding: 20px;
+	background-color: rgba(255,255,255,.9);
+	position: fixed;
+}
+
+.short-header {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	background-color: rgba(0,0,0,.2);
+}
+
+.nav-links {
+	@media(min-width: $medium){
+		float: right;
+	}
+
+	li {
+		@include inline-block;
+	}
+}
+
+
+/* Index page */
+
+
+.post-tease {
+	padding: 10px;
+	background-color: #FFF;
+	margin-bottom: 20px;
+}
+
+
+.resp-img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* Portfolio */
+
+.portfolio-cover {
+	z-index: -1000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	@include pie-clearfix;
+}
+
+.portfolio-title {
+	background-color: rgba(255,255,255,.25);
+	width: 700px;
+	position: absolute;
+	top: 50%;
+
+	h1 {
+		font-size: 42px;
+	}
+}
+
+.portfolio-content {
+	max-width: 700px;
+	margin: 0 auto;
+
+	img {
+		width: 120%;
+		margin: 0 -10% 0 -10%;
+	}
+
+	p {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+}
